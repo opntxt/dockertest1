@@ -13,8 +13,7 @@ pipeline {
           steps {
             sh 'cd /var/lib/jenkins/workspace/pipeline2/dockertest1'
             sh 'cp  /var/lib/jenkins/workspace/pipeline2/dockertest1/* /var/lib/jenkins/workspace/pipeline2'
-            sh 'docker build -t sreeharshav/pipelinetestprod:${BUILD_NUMBER} .'
-            sh 'docker tag sreeharshav/pipelinetestprod:${BUILD_NUMBER} opntxt/pipelinetestprod:${BUILD_NUMBER}'
+            sh 'docker build -t opntxt/pipelinetestprod:${BUILD_NUMBER} .'
             }
         }
 
